@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Image from 'next/image'
 
 export default function AboutPreview() {
   return (
@@ -37,8 +38,14 @@ export default function AboutPreview() {
               Learn More About Us
             </Link>
           </div>
-          <div className="bg-gray-200 rounded-lg h-64 md:h-80 w-full">
-            {/* Placeholder for company image */}
+          <div className="relative bg-gray-200 rounded-lg h-64 md:h-80 w-full overflow-hidden">
+            <Image 
+              src="/images/company.jpg" 
+              alt="BEGOH ENV-SOLUTION team or office" 
+              fill
+              className="object-cover rounded-lg"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
           </div>
         </div>
       </div>
