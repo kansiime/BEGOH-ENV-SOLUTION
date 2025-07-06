@@ -51,12 +51,14 @@ const ProjectsGallery = () => {
               >
                 <div className="bg-white rounded-lg shadow-md overflow-hidden">
                   <div className="relative h-60">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover"
-                    />
+  
+                                <Image 
+                                  src="/images/water_reesource.jpg" 
+                                  alt="BEGOH ENV-SOLUTION team or office" 
+                                  fill
+                                  className="object-cover rounded-lg"
+                                  sizes="(max-width: 768px) 100vw, 50vw"
+                                />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold mb-2">{project.title}</h3>

@@ -28,7 +28,7 @@ const Footer = () => {
           <div>
             <Link href="/" className="flex items-center mb-6">
               <Image 
-                src="/images/logo-white.png" 
+                src="/images/logo.png" 
                 alt="BEGOH ENV-SOLUTION Logo" 
                 width={180} 
                 height={60}
