@@ -7,13 +7,13 @@ import CTA from '@/components/sections/CTA'
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Hero />
       <ServicesPreview />
       <AboutPreview />
       <ProjectsGallery />
       <Testimonials />
       <CTA />
-    </>
+    </main>
   )
 }
