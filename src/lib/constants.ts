@@ -1,12 +1,7 @@
 import {
   HardHat,
-  Leaf,
-  Droplets,
-  Flame,
-  Map,
-  Factory,
-  FlaskConical,
-  Trash2
+  Leaf
+  // only keep what's used in `services`
 } from 'lucide-react'
 
 export const services = [

@@ -27,9 +27,9 @@ const Testimonials = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             What Our Clients Say
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Hear from organizations we've partnered with to achieve their environmental and safety goals.
-          </p>
+<p className="text-lg text-gray-600 max-w-2xl mx-auto">
+  Hear from organizations we&apos;ve partnered with to achieve their environmental and safety goals.
+</p>
         </motion.div>
 
         <div className="relative h-64">
@@ -57,9 +57,9 @@ const Testimonials = () => {
                     </svg>
                   ))}
                 </div>
-                <blockquote className="text-lg italic text-gray-700 mb-6">
-                  "{testimonial.text}"
-                </blockquote>
+<blockquote className="text-lg italic text-gray-700 mb-6">
+  &ldquo;{testimonial.text}&rdquo;
+</blockquote>
                 <div className="flex items-center">
                   <div className="ml-4">
                     <p className="font-semibold text-gray-900">{testimonial.name}</p>

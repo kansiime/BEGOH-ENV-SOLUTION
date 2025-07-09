@@ -3,7 +3,7 @@
 import { forwardRef, ComponentPropsWithoutRef } from 'react'
 import { motion } from 'framer-motion'
 
-interface MotionDivProps extends ComponentPropsWithoutRef<typeof motion.div> {}
+type MotionDivProps = ComponentPropsWithoutRef<typeof motion.div>
 
 const MotionDiv = forwardRef<HTMLDivElement, MotionDivProps>(
   ({ children, initial, animate, transition, whileHover, whileTap, ...props }, ref) => {

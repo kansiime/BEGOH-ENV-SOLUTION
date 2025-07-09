@@ -40,7 +40,7 @@ export default function ResourcesPage() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-4">
-                Explore our successful projects and the impact we've made for our clients.
+                Explore our successful projects and the impact we&apos;ve made for our clients.
               </p>
               <Link 
                 href="#case-studies"
