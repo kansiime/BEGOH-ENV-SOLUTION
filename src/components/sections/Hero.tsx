@@ -11,7 +11,6 @@ const Hero = () => {
   const [autoScroll, setAutoScroll] = useState(true)
 
   const carouselItems = [
-
     {
       image: '/images/Reseearch.jpg',
       title: 'Safety Training',
@@ -22,7 +21,7 @@ const Hero = () => {
       title: 'RGEOGRAPHICAL INFORMATION SYSTEM AND MAPPING',
       description: 'Solar energy solutions for a greener future'
     },
-        {
+    {
       image: '/images/occupation.jpg',
       title: 'Environmental Solutions',
       description: 'Innovative approaches to sustainable development'
@@ -62,12 +61,6 @@ const Hero = () => {
     setTimeout(() => setAutoScroll(true), 10000)
   }
 
-  interface CarouselItem {
-    image: string
-    title: string
-    description: string
-  }
-
   const goToSlide = (index: number): void => {
     setCurrentSlide(index)
     setAutoScroll(false)
@@ -103,6 +96,7 @@ const Hero = () => {
               fill
               className="object-cover"
               priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             
             {/* Content overlay */}

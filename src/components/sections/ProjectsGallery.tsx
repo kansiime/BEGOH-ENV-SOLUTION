@@ -53,7 +53,7 @@ const ProjectsGallery = () => {
                   <div className="relative h-60">
   
                                 <Image 
-                                  src="/images/water_reesource.jpg" 
+                                  src="/images/water_resource.jpg" 
                                   alt="BEGOH ENV-SOLUTION team or office" 
                                   fill
                                   className="object-cover rounded-lg"

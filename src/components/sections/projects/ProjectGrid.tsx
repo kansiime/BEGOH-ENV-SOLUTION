@@ -1,6 +1,7 @@
 import { projects } from '@/lib/constants'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface ProjectGridProps {
   projects: typeof projects
@@ -12,10 +13,12 @@ export default function ProjectGrid({ projects }: ProjectGridProps) {
       {projects.map((project) => (
         <Card key={project.id} className="hover:shadow-lg transition-shadow overflow-hidden">
           <div className="relative h-48">
-            <img
+            <Image
               src={project.image}
-              alt={project.title}
-              className="object-cover w-full h-full"
+              alt={project.title || "Project thumbnail"}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
           <CardHeader>

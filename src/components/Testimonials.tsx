@@ -63,7 +63,7 @@ export function Testimonials() {
                   <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                 </div>
               </div>
-              <p className="text-muted-foreground">"{testimonial.content}"</p>
+             <p className="text-muted-foreground">&ldquo;{testimonial.content}&rdquo;</p>
             </motion.div>
           ))}
         </div>

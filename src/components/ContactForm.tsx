@@ -34,12 +34,13 @@ export function ContactForm() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    toast.success('Message sent successfully!', {
-      description: 'We will get back to you soon.',
-    })
-    form.reset()
-  }
+function onSubmit(values: z.infer<typeof formSchema>) {
+  console.log(values) // or send to API later
+  toast.success('Message sent successfully!', {
+    description: 'We will get back to you soon.',
+  })
+  form.reset()
+}
 
   return (
     <Form form={form} onSubmit={onSubmit}>
