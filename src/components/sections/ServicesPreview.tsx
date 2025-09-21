@@ -1,3 +1,5 @@
+// src/components/sections/ServicesPreview.tsx
+
 'use client'
 
 import { services } from '@/lib/constants'
@@ -33,24 +35,34 @@ const ServicesPreview = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="h-full hover:shadow-lg transition-shadow">
+              <Card className="h-full hover:shadow-lg transition-all duration-300 group">
                 <CardHeader>
-                  <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                  <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors">
                     <service.icon className="text-green-600 w-6 h-6" />
                   </div>
-                  <CardTitle className="text-xl">{service.title}</CardTitle>
+                  <CardTitle className="text-xl group-hover:text-green-600 transition-colors">
+                    {service.title}
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
-                  <Link 
-                    href={`/services#${service.id}`}
-                    className="text-green-600 hover:text-green-800 font-medium inline-flex items-center"
-                  >
-                    Learn more
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
+                  <p className="text-gray-600 mb-6">{service.description}</p>
+                  <div className="flex flex-col sm:flex-row gap-2">
+                    <Link 
+                      href={`/services#${service.id}`}
+                      className="text-green-600 hover:text-green-800 font-medium inline-flex items-center justify-center px-4 py-2 border border-green-600 rounded-md hover:bg-green-50 transition-colors flex-1 text-center"
+                    >
+                      Learn more
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                    <Link 
+                      href={`/contact?service=${service.id}`}
+                      className="text-white bg-green-600 hover:bg-green-700 font-medium inline-flex items-center justify-center px-4 py-2 rounded-md transition-colors flex-1 text-center"
+                    >
+                      Get Quote
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </motion.div>
@@ -60,9 +72,12 @@ const ServicesPreview = () => {
         <div className="text-center mt-12">
           <Link
             href="/services"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700"
+            className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-green-600 hover:bg-green-700 transition-colors"
           >
             View All Services
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
           </Link>
         </div>
       </div>

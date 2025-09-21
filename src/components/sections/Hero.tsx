@@ -12,7 +12,7 @@ const Hero = () => {
 
   const carouselItems = [
     {
-      image: '/images/Reseearch.jpg',
+      image: '/images/projects/safety_training.jpg',
       title: 'Safety Training',
       description: 'Comprehensive occupational health programs'
     },
@@ -32,7 +32,7 @@ const Hero = () => {
       description: 'Clean water solutions for communities'
     },
     {
-      image: '/images/biogas.jpg',
+      image: '/images/renewable.jpg',
       title: 'Renewable Energy',
       description: 'Biogas technology implementation'
     }

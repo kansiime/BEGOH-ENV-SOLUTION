@@ -1,11 +1,12 @@
+// src/components/sections/about/MissionVision.tsx
 'use client'
 
-import { m } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export default function MissionVision() {
   return (
     <section className="py-12">
-      <m.div
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -24,7 +25,7 @@ export default function MissionVision() {
             BEGOH ENV SOLUTION LIMITED strives to provide quality services and cost-effective solutions as a pride to our clients with utmost professionalism and integrity.
           </p>
         </div>
-      </m.div>
+      </motion.div>
     </section>
   )
 }

@@ -1,3 +1,5 @@
+// src/components/sections/projects/ProjectGrid.tsx
+
 import { projects } from '@/lib/constants'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import Link from 'next/link'
