@@ -1,6 +1,7 @@
+// src/components/sections/about/Values.tsx
 'use client'
 
-import { m } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const values = [
   {
@@ -24,7 +25,7 @@ const values = [
 export default function Values() {
   return (
     <section className="py-12">
-      <m.div
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -34,7 +35,7 @@ export default function Values() {
         <h2 className="text-2xl font-bold mb-8">Our Core Values</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((value, index) => (
-            <m.div
+            <motion.div
               key={value.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -44,10 +45,10 @@ export default function Values() {
             >
               <h3 className="text-lg font-semibold mb-2 text-green-700">{value.title}</h3>
               <p className="text-gray-600">{value.description}</p>
-            </m.div>
+            </motion.div>
           ))}
         </div>
-      </m.div>
+      </motion.div>
     </section>
   )
 }

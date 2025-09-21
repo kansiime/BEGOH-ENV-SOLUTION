@@ -1,3 +1,4 @@
+// src/app/about/page.tsx
 import HistoryTimeline from '@/components/sections/about/HistoryTimeline'
 import MissionVision from '@/components/sections/about/MissionVision'
 import TeamSection from '@/components/sections/about/TeamSection'

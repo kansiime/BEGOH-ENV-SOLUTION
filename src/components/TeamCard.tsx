@@ -1,3 +1,5 @@
+// src/components/ui/TeamCard.tsx
+
 'use client'
 
 import { motion } from 'framer-motion'

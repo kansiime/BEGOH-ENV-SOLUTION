@@ -1,3 +1,4 @@
+// src/components/sections/Services.tsx
 'use client'
 
 import { services } from '@/lib/constants'
